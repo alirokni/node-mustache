@@ -1,0 +1,87 @@
+{
+    "siteTable": {
+        "navigation": [
+            {
+                "url": "/",
+                "title": "Home",
+                "style": "one"
+            },
+            {
+                "url": "//www.rokni.com/career/",
+                "title": "Career",
+                "style": "two"
+            },
+            {
+                "url": "//www.rokni.com/xml/",
+                "title": "XML/XSLT",
+                "style": "three"
+            },
+            {
+                "url": "//www.rokni.com/contact/",
+                "title": "Contact",
+                "style": "four"
+            },
+            {
+                "url": "//alirokni.blogspot.com",
+                "title": "My blog",
+                "style": "four"
+            },
+            {
+                "url": "//www.rokni.com/settings/",
+                "title": "Settings",
+                "style": "four"
+            }
+        ],
+        "topic": [
+            {
+                "section": [
+                    {
+                        "paragraph": "The <b>Rokni.net</b> is an 'experimental' site. I try new technologies here and then move it to Rokni.com. Anything related to html, css, javascript, design, patterns that is interesting and needs to be tried out will be tested. So it should be considered as a <b>Hard Hat Area</b> within browsers.",
+                        "first": "true"
+                    }
+                ]
+            },
+            {
+                "section": [
+                    {
+                        "paragraph": "<header><h1 class='header2 absolute'>Updates</h1><nav><form name='range' class='range'><input type='range' id='range' min='0' max='3' step='1' value='2'><ul class='input-range'><li class='tabs-1'>03/08</li><li class='tabs-2'>10/10</li><li class='tabs-3 light-color'>06/11</li><li class='tabs-4'>10/13</li></ul></form></nav></header>"
+                    },
+                    {
+                        "paragraph": "<p id='tabs-1' class='contenttxt hide'><time datetime='2008-03-01'>March 2008</time> - For long time, I wanted to overhaul the site. Now, I am planning to code it with PHP and MySQL, revamp its underlying CSS and JavaScript, including DOM scripting and asynchronous call, as needed, and finally some mash-ups;although, this may take a while.<a href='032208/' class='more' title='Just A Sneak Pick'>take a look</a></p><p id='tabs-2' class='contenttxt hide'><time datetime='2010-10-01'>October 2010</time> - The site is changing to use HTML5, more CSS3 and probably AJAX for functionality. Its progress depends on finding a balance between maintenance and layout. Also, I have an eye on tablets and smartphones for this iteration.</p><p id='tabs-3' class='contenttxt'><time datetime='2011-06-01'>June 2011</time> - As more capable browsers are introduced, the site shall continue its progress for implementing HTML5, CSS3, AJAX and PHP functionalities while degrade nicely for older browsers.</p><p id='tabs-4' class='contenttxt hide'><time datetime='2013-10-01'>October 2013</time> - The site is getting ready for a major overhaul of serverside templating using Node.js and Mustache, later will come implemntation of client side templateing.</p>",
+                        "range": "true"
+                    }
+                ]
+            },
+            {
+                "section": [
+                    {
+                        "paragraph": "<header><h1 class='header2'>Web Performance</h1></header>"
+                    },
+                    {
+                        "paragraph": "<p class='contenttxt'>An interesting topic that I am working as of now is, Web Performance. I am testing, analyzing and optimizing this site and the Rokni.com with Google <a href='https://developers.google.com/speed/'>PageSpeed Tools</a>, <a href='https://developers.google.com/closure/compiler/'>Closure Compiler</a> Service UI, <a href='http://developer.yahoo.com/yslow/'>YSlow</a> and some other interesting online tools to make the site faster.</p>"
+                    }
+                ]
+            },
+            {
+                "section": [
+                    {
+                        "paragraph": "<header><h1 class='header2'>Responsive web design (RWD) and Mobile</h1></header>"
+                    },
+                    {
+                        "paragraph": "<p class='contenttxt'>Basically, Rokni.net is competing against Rokni.com which uses Google's PageSpeed Service to load faster. Current score: <table style='margin:0 auto; text-align:center; width:80%; border: 1px solid red' cellpadding='0' colspan='0'><tr><th colspan='3'>Overall PageSpeed Score</th></tr><tr><td rowspan='2'>As of<br>07/30/13</td><td>Rokni.com</td><td>Rokni.net</td></tr><tr><td>86/100</td><td>77/100</td></tr><tr><td>09/20/13</td><td>100/100</td><td>98/100</td></tr></table></p>"
+                    }
+                ]
+            },
+            {
+                "section": [
+                    {
+                        "paragraph": "<header><h1 class='header2'>Delicious</h1></header>"
+                    },
+                    {
+                        "paragraph": "<p class='contenttxt'>This section will be added within a week or so.</p>"
+                    }
+                ]
+            }
+        ]
+    }
+}
