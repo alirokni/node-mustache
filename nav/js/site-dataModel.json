@@ -58,7 +58,7 @@
                         "title": "<header><h1 class='header2'>Web Performance</h1></header>"
                     ,
                     
-                        "paragraph": "<p class='contenttxt'>An interesting topic that I am working as of now is, Web Performance. I am testing, analyzing and optimizing this site and the Rokni.com with Google <a href='https://developers.google.com/speed/'>PageSpeed Tools</a>, <a href='https://developers.google.com/closure/compiler/'>Closure Compiler</a> Service UI, <a href='http://developer.yahoo.com/yslow/'>YSlow</a> and some other interesting online tools to make the site faster.</p>"
+                        "paragraph": "<p class='contenttxt'>An interesting topic that I am working as of now is, Web Performance. I am testing, analyzing and optimizing this site and the Rokni.com with Google <a href='https://developers.google.com/speed/'>PageSpeed Tools</a>, <a href='https://developers.google.com/closure/compiler/'>Closure Compiler</a> Service UI, <a href='http://developer.yahoo.com/yslow/'>YSlow</a> and some other interesting online tools to make the site faster.<br>Basically, Rokni.net is competing against Rokni.com which uses Google's PageSpeed Service to load faster. Current score: <div id='container' style='width: 80%; height: 400px; margin: 10px auto'></div></p>"
                     }
                 ]
             },
@@ -68,7 +68,7 @@
                         "title": "<header><h1 class='header2'>Responsive web design (RWD) and Mobile</h1></header>"
                     ,
                     
-                        "paragraph": "<p class='contenttxt'>Basically, Rokni.net is competing against Rokni.com which uses Google's PageSpeed Service to load faster. Current score: <table style='margin:0 auto; text-align:center; width:80%; border: 1px solid red' cellpadding='0' colspan='0'><tr><th colspan='3'>Overall PageSpeed Score</th></tr><tr><td rowspan='2'>As of<br>07/30/13</td><td>Rokni.com</td><td>Rokni.net</td></tr><tr><td>86/100</td><td>77/100</td></tr><tr><td>09/20/13</td><td>100/100</td><td>98/100</td></tr></table></p>"
+                        "paragraph": "<p class='contenttxt'>Rokni.com has already created with <abbr title='esponsive web design'>RWD</abbr> in mind although it has a limited reach. Rokni.net is inherited the stylesheet, however its css needs to be overhauled/cleaned. Once Web Performance reaches within a satisfactory results, I'll make this site works on mobile (including smart phones and tablets) devices with <abbr title='Responsive web design'>RWD</abbr> experiences. </p>"
                     }
                 ]
             },
