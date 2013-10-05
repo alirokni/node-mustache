@@ -44,10 +44,10 @@
             {
                 "section": [
                     {
-                        "title": "<header><h1 class='header2 absolute'>Updates</h1><nav><form name='range' class='range'><input type='range' id='range' min='0' max='3' step='1' value='2'><ul class='input-range'><li class='tabs-1'>03/08</li><li class='tabs-2'>10/10</li><li class='tabs-3 light-color'>06/11</li><li class='tabs-4'>10/13</li></ul></form></nav></header>"
+                        "title": "<header><h1 class='header2 absolute'>Updates</h1><nav><form name='range' class='range'><input type='range' id='range' min='0' max='3' step='1' value='3'><ul class='input-range'><li class='tabs-1'>03/08</li><li class='tabs-2'>10/10</li><li class='tabs-3'>06/11</li><li class='tabs-4 light-color'>10/13</li></ul></form></nav></header>"
                     ,
                     
-                        "paragraph": "<p id='tabs-1' class='contenttxt hide'><time datetime='2008-03-01'>March 2008</time> - For long time, I wanted to overhaul the site. Now, I am planning to code it with PHP and MySQL, revamp its underlying CSS and JavaScript, including DOM scripting and asynchronous call, as needed, and finally some mash-ups;although, this may take a while.<a href='032208/' class='more' title='Just A Sneak Pick'>take a look</a></p><p id='tabs-2' class='contenttxt hide'><time datetime='2010-10-01'>October 2010</time> - The site is changing to use HTML5, more CSS3 and probably AJAX for functionality. Its progress depends on finding a balance between maintenance and layout. Also, I have an eye on tablets and smartphones for this iteration.</p><p id='tabs-3' class='contenttxt'><time datetime='2011-06-01'>June 2011</time> - As more capable browsers are introduced, the site shall continue its progress for implementing HTML5, CSS3, AJAX and PHP functionalities while degrade nicely for older browsers.</p><p id='tabs-4' class='contenttxt hide'><time datetime='2013-10-01'>October 2013</time> - The site is getting ready for a major overhaul of serverside templating using Node.js and Mustache, later will come implemntation of client side templateing.</p>",
+                        "paragraph": "<p id='tabs-1' class='contenttxt hide'><time datetime='2008-03-01'>March 2008</time> - For long time, I wanted to overhaul the site. Now, I am planning to code it with PHP and MySQL, revamp its underlying CSS and JavaScript, including DOM scripting and asynchronous call, as needed, and finally some mash-ups;although, this may take a while.<a href='032208/' class='more' title='Just A Sneak Pick'>take a look</a></p><p id='tabs-2' class='contenttxt hide'><time datetime='2010-10-01'>October 2010</time> - The site is changing to use HTML5, more CSS3 and probably AJAX for functionality. Its progress depends on finding a balance between maintenance and layout. Also, I have an eye on tablets and smartphones for this iteration.</p><p id='tabs-3' class='contenttxt hide'><time datetime='2011-06-01'>June 2011</time> - As more capable browsers are introduced, the site shall continue its progress for implementing HTML5, CSS3, AJAX and PHP functionalities while degrade nicely for older browsers.</p><p id='tabs-4' class='contenttxt'><time datetime='2013-10-01'>October 2013</time> - The site is getting ready for a major overhaul of serverside templating using Node.js and Mustache, later will come implemntation of client side templateing.</p>",
                         "range": "true"
                     }
                 ]
@@ -68,7 +68,7 @@
                         "title": "<header><h1 class='header2'>Responsive web design (RWD) and Mobile</h1></header>"
                     ,
                     
-                        "paragraph": "<p class='contenttxt'>Rokni.com has already created with <abbr title='esponsive web design'>RWD</abbr> in mind although it has a limited reach. Rokni.net is inherited the stylesheet, however its css needs to be overhauled/cleaned. Once Web Performance reaches within a satisfactory results, I'll make this site works on mobile (including smart phones and tablets) devices with <abbr title='Responsive web design'>RWD</abbr> experiences. </p>"
+                        "paragraph": "<p class='contenttxt'>Rokni.com has already created with <abbr title='esponsive web design'>RWD</abbr> in mind although it has a limited reach. Rokni.net is inherited the stylesheet, however its css needs to be overhauled/cleaned. Once Web Performance reaches within a satisfactory results and all updates and functionalities are done, I'll make this site works on mobile (including smart phones and tablets) devices with <abbr title='Responsive web design'>RWD</abbr> experiences. </p>"
                     }
                 ]
             },
@@ -78,7 +78,7 @@
                         "title": "<header><h1 class='header2'>Delicious</h1></header>"
                     ,
                     
-                        "paragraph": "<p class='contenttxt'>This section will be added within a week or so.</p>"
+                        "paragraph": "<p class='contenttxt' id='delicious'></p>"
                     }
                 ]
             }

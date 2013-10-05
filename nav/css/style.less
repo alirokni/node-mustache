@@ -4,7 +4,7 @@
 @dark-base: #003250;
 @global-font: normal large 'Raleway', sans-serif, monospace;
 @global-alignment: center;
-@global-lineHeight: 1.75;
+@lineHeight: 1.75;
 
 .rounded-corners (@radius: 10px) {
   -webkit-border-radius: @radius;
@@ -65,7 +65,7 @@ article {
 }
 
 hgroup {
-    background: url(../../images/sunflower-header-200.png) no-repeat;
+    background: url(http://www.rokni.net/images/sunflower-header-200.png) no-repeat;
     color: #fff;
     text-align: @global-alignment;
     text-shadow: 0 0 .2em #f93,0 0 .2em #f93,0 0 .2em #f93;
@@ -119,7 +119,6 @@ body {
     background: @background;
     font: @global-font;
     text-align: @global-alignment;
-    line-height: @global-lineHeight;
 }
 
 img {
@@ -183,6 +182,11 @@ textarea {
 
 .a:hover,.b:hover {
     border-right: 1px solid #5b5b5b;
+}
+
+a.external {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVElEQVR42n3PgQkAIAhEUXdqJ3dqJ3e6IoTPUSQcgj4EQ5IlUiLE0Jil3PECXhcHGBhZ8kg4hwxAu3MZeCGeyFnAXp4hqNQPnt7QL0nADpD6wHccLvnAKksq8iiaAAAAAElFTkSuQmCC) center right no-repeat;
+    padding-right: 13px;
 }
 
 .absolute {
@@ -260,6 +264,14 @@ textarea {
 .no-input-range .colorOn {
     background-color: #f93;
     color: @dark-base;
+}
+
+#delicious li {
+    font-size: medium;
+}
+
+#delicious li  a + span {
+    padding-left:10px;
 }
 
 .fontfamily {
@@ -372,6 +384,7 @@ textarea {
     margin: 0 auto;
     padding: 0;
     text-align: left;
+    line-height: @lineHeight;
     /*display: inline-block;*/
     .display (inline-block);
 }

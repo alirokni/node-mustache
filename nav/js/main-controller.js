@@ -27,12 +27,14 @@ http.createServer(function (request, response) {
           case '.css':
             contentType = 'text/css';
           break;
+          case '.png':
+            contentType = 'image/png';
+          break;
       }
 
       fs.exists(filePath, function(exists) {
-          if (exists) {
+        if (exists) {
           fs.readFile(filePath, function(error,template) {
-
             if (error) {
               response.writeHead(500);
               response.write(err + "\n");

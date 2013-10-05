@@ -2,11 +2,11 @@
 a{text-decoration:underline}
 a:hover{text-decoration:none}
 article{background-color:transparent;padding:10px;margin:10px;width:600px;-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;border-radius:10px;-moz-box-shadow:#003250 5px 5px 5px;-webkit-box-shadow:#003250 5px 5px 5px;box-shadow:#003250 5px 5px 5px}
-hgroup{background:url(../../images/sunflower-header-200.png) no-repeat;color:#fff;text-align:center;text-shadow:0 0 .2em #f93,0 0 .2em #f93,0 0 .2em #f93;-moz-transform:text-shadow .35s linear .05s;border:1px solid transparent;display:block;width:772px;margin:5px auto;-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;border-radius:15px;-webkit-transition:border .35s linear;-moz-transition:border .35s linear;transition:border .35s linear;}
+hgroup{background:url(http://www.rokni.net/images/sunflower-header-200.png) no-repeat;color:#fff;text-align:center;text-shadow:0 0 .2em #f93,0 0 .2em #f93,0 0 .2em #f93;-moz-transform:text-shadow .35s linear .05s;border:1px solid transparent;display:block;width:772px;margin:5px auto;-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;border-radius:15px;-webkit-transition:border .35s linear;-moz-transition:border .35s linear;transition:border .35s linear;}
 hgroup:hover{text-shadow:0 0 0 #f93,0 0 0 #f93,0 0 0 #f93;border:1px solid #f93;-webkit-border-radius:15px;-moz-border-radius:15px;-ms-border-radius:15px;border-radius:15px;-webkit-transition:border .35s linear;-moz-transition:border .35s linear;transition:border .35s linear;}
 fieldset{border:0;margin:2px 0 0 0;padding:0}
 h1,h2{padding:0;margin:0;font-size:medium}
-body{background:#fffdfd;font:normal large 'Raleway',sans-serif,monospace;text-align:center;line-height:1.75}
+body{background:#fffdfd;font:normal large 'Raleway',sans-serif,monospace;text-align:center}
 img{border-style:none}
 input{width:130px;height:15px;margin-bottom:5px}
 label{width:80px;float:left}
@@ -20,6 +20,7 @@ textarea{width:210px;margin-bottom:5px}
 .a,.a:hover,.b,.b:hover{margin:0;padding:6px}
 .a,.b{border-right:1px solid #b4b4b4}
 .a:hover,.b:hover{border-right:1px solid #5b5b5b}
+a.external{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAVElEQVR42n3PgQkAIAhEUXdqJ3dqJ3e6IoTPUSQcgj4EQ5IlUiLE0Jil3PECXhcHGBhZ8kg4hwxAu3MZeCGeyFnAXp4hqNQPnt7QL0nADpD6wHccLvnAKksq8iiaAAAAAElFTkSuQmCC) center right no-repeat;padding-right:13px}
 .absolute{position:absolute;margin:0;padding:6px}
 .b{border-left:1px solid #b4b4b4}
 .b:hover{border-left:1px solid #5b5b5b}
@@ -30,6 +31,8 @@ textarea{width:210px;margin-bottom:5px}
 .contenttxt{color:#003250;padding:0 0 0 5px;margin:0}
 .contenttxt>time,.light-color{color:#f93}
 .no-input-range .colorOn{background-color:#f93;color:#003250}
+#delicious li{font-size:medium}
+#delicious li a+span{padding-left:10px}
 .fontfamily{color:#003250;font:normal medium "Palatino Linotype",Arial,Verdana,Helvetica,sans-serif}
 .footer{position:fixed;bottom:5px;width:100%;left:0;clear:both}
 .footer li{border-right:1px solid #969696}
@@ -44,7 +47,7 @@ textarea{width:210px;margin-bottom:5px}
 .header2{color:#003250;padding:2px 0;margin:0;clear:both}
 .hide{display:none}
 .skip-nav{float:left;text-decoration:none;text-indent:-10000px}
-.mainContent{width:780px;margin:0 auto;padding:0;text-align:left;display:inline-block}
+.mainContent{width:780px;margin:0 auto;padding:0;text-align:left;line-height:1.75;display:inline-block}
 .margin-neg{margin:-5px 0 0;padding:0}
 .no-html5-compliant{border:1px solid #f00;background-color:#003250;color:#f93;font-size:80%;margin:5px auto;padding:5px 0;text-align:center;width:100%}
 .openSlider{background:#003250;color:#f93;width:14px;height:33px;position:absolute;top:0;right:0;-webkit-border-bottom-left-radius:5px 5px;-webkit-border-top-left-radius:5px 5px;-webkit-border-radius:5px 0 0 5px;-moz-border-radius:5px 0 0 5px;-ms-border-radius:5px 0 0 5px;border-radius:5px 0 0 5px;}
