@@ -3,20 +3,26 @@
 var  sys = require('sys'),
     http = require('http'),
       fs = require('fs'),
-Mustache = require('../../node_modules/mustache'),
+Mustache = require('../node_modules/mustache'),
     path = require('path'),
-template = "./mysite.html";  // relative to its execution path
+template = '';
 
-  var siteData = JSON.parse(fs.readFileSync("./site-dataModel.json", "utf8"));
+// Model, json data,  site content
+var siteData = JSON.parse(fs.readFileSync("js/site-dataModel.json", "utf8"));
+
   
 http.createServer(function (request, response) {
 
-  var filePath = '..' + request.url;
-      if (filePath == './') {
-          filePath = './mysite.html';
-      }
-  var extname = path.extname(filePath); // .html
-  var contentType = 'text/html';
+  var filePath = request.url;  // relative to its execution path
+  if ( filePath.indexOf('html') != -1 ) { 
+	      filePath = 'view' + filePath; // checking html
+	} else {
+        filePath = (request.url).substring(1);  // To remove extra / in path for non html files
+	}
+	
+  var extname = path.extname(filePath),
+      contentType = 'text/html';
+
       switch (extname) {
           case '.js':
             contentType = 'text/javascript';
@@ -30,20 +36,28 @@ http.createServer(function (request, response) {
           case '.png':
             contentType = 'image/png';
           break;
+          case '.gif':
+            contentType = 'image/gif';
+          break;
       }
 
       fs.exists(filePath, function(exists) {
         if (exists) {
           fs.readFile(filePath, function(error,template) {
             if (error) {
-              response.writeHead(500);
-              response.write(err + "\n");
+      			  response.writeHead(500, {'Content-Type': 'text/plain'});
+              response.write('500 - Interanl Service Error \n' + error );
               response.end();
               return;
             } else {
               response.writeHead(200, { 'Content-Type': contentType });
-              response.write(Mustache.to_html(template.toString(), siteData, "utf8"));
-              response.end();
+              if( contentType === 'image/png' || contentType === 'image/gif' ){
+			  	      response.write(new Buffer(template));
+              } else {
+              	response.write(Mustache.to_html(template.toString(), siteData, "utf8"));
+              }
+			        response.end();
+              return;
             }
           });
         } else {

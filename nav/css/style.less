@@ -58,14 +58,14 @@ a:hover {
 article {
     background-color: transparent;
     padding: 10px;
-    margin: 10px;
+    margin: 10px 0 10px 161px;
     width: 600px;
     .rounded-corners;
     .box-shadow;
 }
 
 hgroup {
-    background: url(http://www.rokni.net/images/sunflower-header-200.png) no-repeat;
+    background: url(../images/sunflower-header-200.png) no-repeat;
     color: #fff;
     text-align: @global-alignment;
     text-shadow: 0 0 .2em #f93,0 0 .2em #f93,0 0 .2em #f93;
@@ -207,7 +207,6 @@ a.external {
     background-color: #fff;
     .float (left);
     padding: 10px 5px;
-    margin: 0;
 }
 
 .boilerplate {
@@ -240,7 +239,6 @@ a.external {
 
 .contentTable {
     .float (left);
-    margin: 15px 0 50px 0;
     padding: 5px 5px 50px 5px;
     background-color: #fff;
     .grad (top, #fff, #eaeaea);
@@ -257,7 +255,7 @@ a.external {
     margin: 0;
 }
 
-.contenttxt>time,.light-color {
+.contenttxt>time, .light-color {
     color: #f93;
 }
 
@@ -704,14 +702,15 @@ ul.input-range li {
 
 #nav {
     font-size: medium;
-    font-weight: 600;
+    font-weight: 100;
     /*float: left;*/
     .float (left);
     list-style-type: none;
-    margin: 0 10px 0 3px;
-    padding: 10px 0 70px;
+    margin: 0 10px;
+    padding: 10px 0;
     text-align: left;
     width: 150px;
+    position: fixed;
     /*
     .rounded-corners (10px);
     .box-shadow;
