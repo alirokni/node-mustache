@@ -9,7 +9,6 @@ template = '';
 
 // Model, json data,  site content
 var siteData = JSON.parse(fs.readFileSync("js/site-dataModel.json", "utf8"));
-
   
 http.createServer(function (request, response) {
 
