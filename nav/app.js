@@ -38,6 +38,9 @@ http.createServer(function (request, response) {
           case '.gif':
             contentType = 'image/gif';
           break;
+          case '.svg':
+            contentType = 'image/svg+xml';
+          break;
       }
 
       fs.exists(filePath, function(exists) {
