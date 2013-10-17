@@ -1,0 +1,37 @@
+{
+  "name": "rokni-net-site",
+  "version": "0.0.1",
+  "author": "Ali Rokni",
+  "description": "an experiment with nodejs, mustache and grunt to build a site with server side templating",
+  "main": "app.js",
+  "dependencies": {
+    "mustache": "janl/mustache.js",
+    "less": "less/less.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alirokni/rokni-net"
+  },
+  "keywords": [
+    "rokni.net",
+    "mustache",
+    "server side templating"
+  ],
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/alirokni/rokni-net/issues",
+    "email": "info@rokni.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-less": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.3.0"
+  }
+}

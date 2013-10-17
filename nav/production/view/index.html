@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rokni.net; the experimental site of Ali M. Rokni</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400">
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body id="Home">
+<header class="vcard">
+    <hgroup>
+        <h1 class="header fn">Ali Mehran Rokni</h1>
+        <h2 class="tagline">
+            The experimental site, information about my interests;<br/>
+            design and development since 1999 <a href="#tocontent" accesskey="0" class="skip-nav">Skip navigation</a>
+            <span class="hide email">info@rokni.net</span>
+        </h2>
+    </hgroup>
+</header>
+<div class="mainContent" >
+    <nav>
+        <ul id="nav">
+        {{#siteTable}}
+            {{#topic}}
+                {{#section}}
+                    {{^first}}
+                        <li class="listItem"><a href="#{{title}}" class="navigation">{{title}}</a></li>
+                    {{/first}}
+                {{/section}}
+            {{/topic}}
+        {{/siteTable}}
+        </ul>
+    </nav>
+        
+    <article class="billboard">
+        {{#siteTable}}
+            {{#topic}}
+                {{#section}}
+                    {{#first}}
+                        <section class="boilerplate" id="tocontent">
+                            {{{paragraph}}}
+                        </section>
+                    {{/first}}
+                {{/section}}
+            {{/topic}}
+        {{/siteTable}}
+    </article>
+    <article class="contentTable">
+        {{#siteTable}}
+            {{#topic}}
+                {{#section}}
+                    {{^first}}
+                        <section {{#range}}id="tabs"{{/range}}>
+                            <header id="{{title}}">
+                                <a href="#" class="home">
+                                    Go Up
+                                </a>
+                                <h1 class='header2 {{^first}}"absolute"{{/first}}'> 
+                                    {{title}}
+                                </h1>
+                                <nav>
+                                    {{^first}}{{{subtitle}}}{{/first}}
+                                </nav>
+                            </header> 
+                            <p class='contenttxt'>
+                                {{{paragraph}}}
+                            </p>
+                        </section>
+                    {{/first}}
+                {{/section}}
+            {{/topic}}
+        {{/siteTable}}
+    </article>
+</div>
+
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/modernizr.min.js"></script>
+<script src="../js/highchartjs/highcharts.js"></script>
+<script src="../js/highchartjs/modules/exporting.js"></script>
+<script src="../js/script.min.js"></script>
+<div class="hide">
+    <img src="../images/sunflower-header-200.png" height="200" width="800">
+</div>
+</body>
+</html>

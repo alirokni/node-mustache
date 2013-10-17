@@ -12,8 +12,9 @@ $(function () {
             xAxis: {
                 categories: [
                     '07/30',
-                    '09/20'
-                              ]
+                    '09/20',
+                    '10/16'
+                            ]
             },
             yAxis: {
                 min: 0,
@@ -37,14 +38,11 @@ $(function () {
             },
             series: [{
                 name: 'Rokni.com',
-                data: [86, 100]
+                data: [86, 100, 95]
     
             }, {
                 name: 'Rokni.net',
-                data: [77, 98]
-    
-          
-    
+                data: [77, 98, 96]
             }]
         });
     });

@@ -8,19 +8,19 @@ Mustache = require('../node_modules/mustache'),
 template = '';
 
 // Model, json data,  site content
-var siteData = JSON.parse(fs.readFileSync("js/site-dataModel.json", "utf8"));
+var siteData = JSON.parse(fs.readFileSync("production/js/site-dataModel.json", "utf8"));
   
 http.createServer(function (request, response) {
 
   var filePath = request.url;  // relative to its execution path
   if ( filePath.indexOf('html') != -1 ) { 
-	      filePath = 'view' + filePath; // checking html
+	      filePath = 'production/view' + filePath; // checking html
 	} else {
-        filePath = (request.url).substring(1);  // To remove extra / in path for non html files
+        filePath = 'production/' + (request.url).substring(1);  // To remove extra / in path for non html files
 	}
 	
   var extname = path.extname(filePath),
-      contentType = 'text/html';
+      contentType = 'text/html;charset=utf-8;';
 
       switch (extname) {
           case '.js':
@@ -47,12 +47,12 @@ http.createServer(function (request, response) {
         if (exists) {
           fs.readFile(filePath, function(error,template) {
             if (error) {
-      			  response.writeHead(500, {'Content-Type': 'text/plain'});
+      			  response.writeHead(500, {'Content-Type': 'text/plain;charset=utf-8'});
               response.write('500 - Interanl Service Error \n' + error );
               response.end();
               return;
             } else {
-              response.writeHead(200, { 'Content-Type': contentType });
+              response.writeHead(200, { 'Content-Type': contentType});
               if( contentType === 'image/png' || contentType === 'image/gif' ){
 			  	      response.write(new Buffer(template));
               } else {
@@ -64,7 +64,7 @@ http.createServer(function (request, response) {
           });
         } else {
           console.log("not exists: " + filePath);
-          response.writeHead(404, {'Content-Type': 'text/plain'});
+          response.writeHead(404, {'Content-Type': 'text/plain;charset=utf-8'});
           response.write('404 Not Found\n');
           response.end();
           return;

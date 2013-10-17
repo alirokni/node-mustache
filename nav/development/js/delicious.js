@@ -5,8 +5,7 @@ $.ajax({
     dataType: "jsonp",
     success: function (data) {
         var obj = data,         // get entry object (array) from JSON data
-            ul = $("<ul>"),     // create a new ul element
-            aUL = [];
+            ul = $("<ul>");     // create a new ul element
 
         $.each(obj, function(key) {
             $('<li>', {
