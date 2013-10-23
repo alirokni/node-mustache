@@ -1,6 +1,4 @@
-/* 
-Mixin
- */
+/* Mixin */
 .box-shadow {
   -moz-box-shadow: #003250 5px 5px 5px;
   -webkit-box-shadow: #003250 5px 5px 5px;

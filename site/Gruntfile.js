@@ -61,15 +61,19 @@ module.exports = function(grunt) {
 				}
 			}
 	    },
-	    //Optimize png and jpg
+	    //Optimize png and jpg or gif
 		imagemin: {
 	    	options: { 
-	    		optimizationLevel: 3
+	    		optimizationLevel: 0
 	      	},
-	      	files: { 
-	      		 // 'destination': 'source'
-	        	'release/images/sunflower-header-200.png': 'build/**/*.png'
-	        }
+			dynamic: {
+		      files: [{
+		        expand: true,                  // Enable dynamic expansion
+		        cwd: 'build/',                 // Src matches are relative to this path
+		        src: ['**/*.{png,jpg,gif}'],   // Actual patterns to match
+		        dest: 'release'                // Destination path prefix
+		      }]
+		    }
 		},
 		clean: {
 			build: [ 'build/js/script.concat.js' ],
@@ -87,7 +91,7 @@ module.exports = function(grunt) {
 		      {
 		      	expand: true,
 		      	cwd: 'build/',
-		      	src: [ 'view/*', 'js/jquery.min.js', 'js/modernizr.min.js', 'js/high*/**/*.js','!js/**/*.src.js', 'js/site-dataModel.json', 'images/*' ],
+		      	src: [ 'view/*', 'js/jquery.min.js', 'js/modernizr.min.js', 'js/high*/**/*.js','!js/**/*.src.js', 'js/site-dataModel.json', 'images/*.svg' ],
 		      	dest: 'release'
 		      }    
 		    ]
