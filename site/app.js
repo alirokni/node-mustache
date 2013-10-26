@@ -56,7 +56,7 @@ http.createServer(function (request, response) {
               if( contentType === 'image/png' || contentType === 'image/gif' ){
 			  	      response.write(new Buffer(template));
               } else {
-              	response.write(Mustache.to_html(template.toString(), siteData, "utf8"));
+              	response.write(Mustache.render(template.toString(), siteData, "utf8"));
               }
 			        response.end();
               return;
