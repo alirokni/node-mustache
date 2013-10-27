@@ -41,6 +41,10 @@ http.createServer(function (request, response) {
           case '.svg':
             contentType = 'image/svg+xml';
           break;
+          case '.ico':
+            contentType = 'image/x-icon';
+          break;
+
       }
 
       fs.exists(filePath, function(exists) {
@@ -53,7 +57,7 @@ http.createServer(function (request, response) {
               return;
             } else {
               response.writeHead(200, { 'Content-Type': contentType});
-              if( contentType === 'image/png' || contentType === 'image/gif' ){
+              if( contentType === 'image/png' || contentType === 'image/x-icon' ){
 			  	      response.write(new Buffer(template));
               } else {
               	response.write(Mustache.render(template.toString(), siteData, "utf8"));
