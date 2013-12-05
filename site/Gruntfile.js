@@ -111,7 +111,8 @@ module.exports = function(grunt) {
                 tasks: [ 'default' ]
             },
             html: {
-                files: [ 'build/view/index.html', 'release/view/index.html' ]
+                files: [ 'build/view/index.html', 'release/view/index.html' ],
+	      		tasks: [ 'default' ]
             }
         }
     });
