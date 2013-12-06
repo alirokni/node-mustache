@@ -5,7 +5,7 @@ This is a repository of server side templating with node.js and mustache
 
  * clone or download rokni-net repository 
 
- * install all related modules stated in wiki (check global -node- vs. loacl -all other modules- installation)
+ * install all related modules stated in wiki (check global -node- vs. local -all other modules- installation)
 
  * run grunt
 
