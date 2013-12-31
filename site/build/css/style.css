@@ -24,7 +24,7 @@ article {
   -webkit-box-shadow: #003250 5px 5px 5px;
   box-shadow: #003250 5px 5px 5px;
 }
-hgroup {
+header.vcard {
   background: url(../images/sunflower-header-200.png) no-repeat;
   color: #fff;
   text-align: center;
@@ -54,7 +54,7 @@ hgroup {
 */
 
 }
-hgroup:hover {
+header.vcard:hover {
   text-shadow: 0 0 0 #f93,0 0 0 #f93,0 0 0 #f93;
   border: 1px solid #f93;
   -webkit-border-radius: 15px;
