@@ -182,6 +182,12 @@ a.external {
   padding: 0 5px;
   margin: 0;
 }
+#chart-container{
+  width:80%;
+  height:400px;
+  margin:10px auto;
+  display:block
+}
 .c-form {
   bottom: 29px;
   /*display: none;*/
