@@ -29,7 +29,7 @@
                     {
                         "title": "Web Performance"
                     ,                   
-                        "paragraph": "An interesting topic that I am working as of now is, Web Performance. I am testing, analyzing and optimizing this site and the Rokni.com with Google <a href='https://developers.google.com/speed/'>PageSpeed Tools</a>, <a href='https://developers.google.com/closure/compiler/'>Closure Compiler</a> Service UI, <a href='http://developer.yahoo.com/yslow/'>YSlow</a> and some other interesting online tools to make the site faster.<br>Basically, Rokni.net is competing against Rokni.com which uses Google's PageSpeed Service to load faster. Current score: <div id='container' style='width: 80%; height: 400px; margin: 10px auto'></div>"
+                        "paragraph": "An interesting topic that I am working as of now is, Web Performance. I am testing, analyzing and optimizing this site and the Rokni.com with Google <a href='https://developers.google.com/speed/'>PageSpeed Tools</a>, <a href='https://developers.google.com/closure/compiler/'>Closure Compiler</a> Service UI, <a href='http://developer.yahoo.com/yslow/'>YSlow</a> and some other interesting online tools to make the site faster.<br>Basically, Rokni.net is competing against Rokni.com which uses Google's PageSpeed Service to load faster. Current score: <span id='chart-container' data-highcharts-chart='0'></span>"
                     }
                 ]
             },
@@ -47,7 +47,7 @@
                     {
                         "title": "Delicious"
                     ,
-                        "paragraph": "<span id='delicious' />"
+                        "paragraph": "<span id='delicious'></span>"
                     }
                 ]
             }
