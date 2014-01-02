@@ -53,7 +53,7 @@ module.exports = function(grunt) {
         //Minify files with UglifyJS.
         uglify: { 
             options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("dd-mm-yyyy") %> */\n'
+                banner: '/*! <%= pkg.name %>, built and created from build/js/script.concat.js <%= grunt.template.today("mm-dd-yyyy") %> */\n'
             },
             js: {
                 files: { 
