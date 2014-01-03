@@ -13,7 +13,8 @@ $(function () {
                 categories: [
                     '07/30',
                     '09/20',
-                    '10/16'
+                    '10/16',
+                    '01/02'
                             ]
             },
             yAxis: {
@@ -38,11 +39,11 @@ $(function () {
             },
             series: [{
                 name: 'Rokni.com',
-                data: [86, 100, 95]
+                data: [86, 100, 95, 99]
     
             }, {
                 name: 'Rokni.net',
-                data: [77, 98, 96]
+                data: [77, 98, 96, 94]
             }]
         });
     });
