@@ -45,16 +45,6 @@ $(window).load (function (){
    $("#message").blur(function(){if((!Modernizr.sessionstorage) && ($("textarea[id='message']").val() !=='')){contactFormCookie();}});
 
   $("a[rel=license], a[rel=external]").attr("target","_blank");
-/*
-  if(swfobject.hasFlashPlayerVersion("9")){
-   var att = { data:"https://clients4.google.com/voice/embed/webCallButton", width:"230", height:"85" };
-   var par = { menu:"false", FlashVars:"id=3fc4d1fec02bbb797b5f0a1f278ee8c86284621b&amp;style=0", wmode:"transparent" };
-   var id = "noflash";
-   var myFlashContent = swfobject.createSWF(att, par, id);
-  };
-
-  swfobject.registerObject("myId","9.0.0");
-*/
  $(".submit").click(function(){
   $.ajax({
    type: "POST",
@@ -82,7 +72,7 @@ $(window).load (function (){
 $(function(){
 
  if(Modernizr.inputtypes.range){
-
+   $("#range").val(3); // set default value
    var rangeChanger= function(index){
     var a = parseInt(index);
     var oTabClass = ".tabs-"+(a+1);
@@ -95,11 +85,11 @@ $(function(){
    };
 
    $(".no-input-range").addClass("hide");
-   $(".range ul li").click(function(){
+   $(".range ul li").on('click', function(e){ 
     var clickIndex = $(".range ul li").index(this);
     rangeChanger(clickIndex);
    });
-   $("#range").change(function(){
+   $("#range").on('click change', function(e){
     var indexIndex = $("#range").val();
     rangeChanger(indexIndex);
    });
