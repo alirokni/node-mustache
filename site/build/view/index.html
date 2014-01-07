@@ -54,12 +54,19 @@
                                 <a href="#" class="home">
                                     Go Up
                                 </a>
+                                {{#range}}
+                                <nav>
+                                    <h1 class='header2'> 
+                                        {{title}}
+                                    </h1>
+                                    {{{subtitle}}}
+                                </nav>
+                                {{/range}}
+                                {{^range}}
                                 <h1 class='header2'> 
                                     {{title}}
                                 </h1>
-                                <nav>
-                                    {{^first}}{{{subtitle}}}{{/first}}
-                                </nav>
+                                {{/range}}
                             </header> 
                             <p class='contenttxt'>
                                 {{{paragraph}}}
