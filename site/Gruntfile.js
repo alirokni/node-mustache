@@ -43,7 +43,7 @@ module.exports = function(grunt) {
             release: {
                 options: {
                     paths: ["css"],
-                    yuicompress: true
+                    cleancss: true
                 },
                 files: {
                     'release/css/style.min.css': [ 'build/css/*.less', 'build/css/**/*.less' ]
