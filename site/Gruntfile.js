@@ -92,7 +92,7 @@ module.exports = function(grunt) {
               {
                 expand: true,
                 cwd: 'build/',
-                src: [ 'view/*', 'js/jquery.min.js', 'js/modernizr.min.js', 'js/high*/**/*.js','!js/**/*.src.js', 'js/site-dataModel.json', 'images/*.svg', '*.ico' ],
+                src: [ 'view/*', 'js/jquery.min.js', 'js/modernizr.min.js', 'js/high*/**/*.js','!js/**/*.src.js', 'js/site-dataModel.json', '**/*.{png,jpg,svg}', '*.ico' ],
                 dest: 'release'
               }    
             ]
