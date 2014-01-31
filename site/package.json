@@ -5,8 +5,8 @@
   "description": "an experiment with nodejs, mustache and grunt to build a site with server side templating",
   "main": "app.js",
   "dependencies": {
-    "mustache": "janl/mustache.js",
-    "less": "less/less.js"
+    "mustache": "0.8.x",
+    "less": "0.9.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
