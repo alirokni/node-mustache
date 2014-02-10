@@ -30,6 +30,24 @@ module.exports = function(grunt) {
                 dest: 'build/js/script.concat.js'
             }
         },
+        // Minify SVG
+        svgmin: {                             // Task
+          options: {                          // Configuration that will be passed directly to SVGO
+            plugins: [
+              { removeViewBox: false },
+              { removeUselessStrokeAndFill: false }
+            ]
+          },
+          dist: {                              // Target
+            files: [{                          // Dictionary of files
+              expand: true,                    // Enable dynamic expansion.
+              cwd: 'build/',                   // Src matches are relative to this path.
+              src: ['**/*.svg'],               // Actual pattern(s) to match.
+              dest: 'release',                 // Destination path prefix.
+              ext: '.min.svg'                  // Dest filepaths will have this extension.
+            }]
+          }
+        },
         // Compile LESS files to CSS with minfing
         less: {
             build: {
@@ -82,7 +100,7 @@ module.exports = function(grunt) {
         copy: {
           main: {
             options:{
-                processContentExclude: ['**/*.{png,gif,jpg,ico}'],
+                processContentExclude: ['**/*.{png,gif,jpg,xsl,ico}'],
                 processContent: function(content, srcpath) {  
                     content = content.replace(/\/\/@ sourceMappingURL=jquery.min.ma/, '//-@-sourceMappingURL=jquery.min.ma');   
                     return content;  
@@ -92,7 +110,7 @@ module.exports = function(grunt) {
               {
                 expand: true,
                 cwd: 'build/',
-                src: [ 'view/*', 'js/jquery.min.js', 'js/modernizr.min.js', 'js/high*/**/*.js','!js/**/*.src.js', 'js/site-dataModel.json', '**/*.{png,jpg,svg}', '*.ico' ],
+                src: [ 'view/*', 'js/jquery.min.js', 'js/modernizr.min.js', 'js/high*/**/*.js','!js/**/*.src.js', 'js/site-dataModel.json', '**/*.{png,jpg}', '*.ico' ],
                 dest: 'release'
               }    
             ]
@@ -111,14 +129,15 @@ module.exports = function(grunt) {
                 tasks: [ 'default' ]
             },
             html: {
-                files: [ 'build/view/index.html', 'release/view/index.html' ],
-	      		tasks: [ 'default' ]
+            	files: [ 'build/view/index.html', 'release/view/index.html' ],
+                tasks: [ 'default' ]
             }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-svgmin');
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-imagemin');
@@ -126,6 +145,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', [ 'clean', 'jshint', 'concat', 'less', 'uglify', 'imagemin', 'copy','watch' ]);
+    grunt.registerTask('default', [ 'clean', 'jshint', 'concat', 'svgmin', 'less', 'uglify', 'imagemin', 'copy', 'watch' ]);
 }
 
