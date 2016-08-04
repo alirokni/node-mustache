@@ -1,6 +1,6 @@
 // main.js and can be relative to the template
 
-var  sys = require('sys'),
+var  sys = require('util'),
      http = require('http'),
        fs = require('fs'),
  Mustache = require('mustache'),
