@@ -34,8 +34,8 @@ appServer = http.createServer(function (request, response) {
       },
       contentType = contentType[fileExtName.substring(1)] || 'text/html';
 
-      fs.exists(filePath, function(exists) {
-        if (exists) {
+      fs.access(filePath, function(error) {
+        if (!error) {
           fs.readFile(filePath, function(error,template) {
             if (error) {
               response.writeHead(500, {'Content-Type': 'text/plain;charset=utf-8'});
@@ -54,7 +54,7 @@ appServer = http.createServer(function (request, response) {
             }
           });
         } else {
-          console.log("not exists: " + filePath);
+          console.log("Not Found " + error);
           response.writeHead(404, {'Content-Type': 'text/plain;charset=utf-8'});
           response.write('404 Not Found\n');
           response.end();
