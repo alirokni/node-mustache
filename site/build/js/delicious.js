@@ -1,6 +1,6 @@
 $.ajax({
     type: "GET",
-    url: "http://feeds.delicious.com/v2/json/rokni?count=5&callback=Delicious",
+    url: "http://del.icio.us/v2/json/rokni?count=5&callback=Delicious",
     jsonpCallback: "Delicious",
     dataType: "jsonp",
     success: function (data) {
